@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding:0;
+	color:#F8F8F8;
+	font-family: "Roboto";
+	opacity:1;
+	background:linear-gradient(90deg, blue, orange), url("../images/texture.png");
+	background-size:400%;
+	background-blend-mode: overlay;
+	animation:120s ease-in-out infinite background_move;
+	text-shadow: 1px 5px 5px #202C3C;
+}
+body::before{
+	background:linear-gradient(90deg, blue, orange);
+	opacity:0.5;
+
+}
+.top_link{
+	text-decoration: none;
+	font-weight:900;
+	font-size:30px;
+	color:#F8F8F8;
+	margin:10px;
+	position:relative;
+	bottom:0;
+	flex-wrap:wrap;
+	transition: .5s;
+	transform: scale(0);
+    animation: grow 1s forwards;
+  }
+
+  @keyframes grow {
+    to {
+      transform: scale(1);
+    }
+  }
+.top_link:hover {
+	color:red;
+	font-size:35px;
+}
+@keyframes background_move {
+	0% {background-position:0;}
+	50%{background-position:100%;}
+	100%{background-position:0;}
+}
+header {
+	text-align: center;
+}
+.link_section {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.top {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.top_text {
+	font-size:4em;
+	font-family: "Roboto";
+	font-weight: 900; 
+	color:#F8F8F8;
+	margin:10px;
+}
+.top_subtext {
+	font-size:1.5em;
+	font-family: "Roboto";
+	font-weight: 900; 
+	text-align:center;
+	color:#F8F8F8;
+	margin:0;
+	width:800px;
+	position:relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.logo {
+	width:300px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees (full circle) */
+  }
+}
+.top_sections {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height:300px;
+}
+.section1_button {
+	bottom:10px;
+	width:100px;
+	margin-left: 25%;
+}
+.box {
+	width: 12.5em;
+	height: 100%;
+	margin: 10px;
+	border-radius: 10px;
+	border: 1px solid #F8F8F8;
+	text-align: center;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	background-color:#202C3C;
+}
+canvas {
+	z-index: -50;
+	width:100%;
+	height:300px;
+}

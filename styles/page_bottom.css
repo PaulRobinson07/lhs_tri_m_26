@@ -1,0 +1,15 @@
+.bottom {
+	justify-content: center;
+	display:flex;
+}
+.bottom_link {
+	text-decoration: none;
+	color: #F8F8F8;
+	font-size:25px;
+	margin:10px;
+}
+.bottom_image {
+	margin-top:10px;
+	height: 30px;
+	width: 30px;
+}
