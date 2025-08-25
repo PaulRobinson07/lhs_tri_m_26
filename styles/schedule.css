@@ -1,0 +1,67 @@
+body {
+	margin:0;
+	padding:0;
+}
+.schedule_parent {
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	min-width:60%;
+	max-width:80%;
+	padding:0;
+	box-sizing:border-box;
+}
+ol {
+	list-style-type: none;
+	display:flex;
+	align-items: center;
+}
+.schedule_child {
+	height:200px;
+	width:150px;
+	border: 1px solid black;
+	list-style-position: inside;
+	font-size:19px;
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#202C3C;
+}
+.schedule_link {
+	position:absolute;
+	bottom:10px;
+	text-align: center;
+}
+.event {
+	width:80%;
+	height:80%;
+	position:fixed;
+	top:10%;
+	left:10%;
+	background-color:#202C3C;
+	opacity: .8;
+	transition: 1s;
+}
+.event_top{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align:center;
+}
+.event_title {
+	text-align:center;
+}
+.exit_button {
+	position:absolute;
+	right:0px;
+	top:0px;
+	size: 50px 40px;
+	border: 5px solid #F8F8F8;
+	border-radius:100px;
+}
+.hidden {
+	top:100%;
+	opacity: .5;
+}
