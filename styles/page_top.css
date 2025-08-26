@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 body::before{
-	background:linear-gradient(90deg, blue, orange);
 	opacity:0.5;
 
 }
