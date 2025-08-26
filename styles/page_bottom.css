@@ -1,6 +1,7 @@
 .bottom {
 	justify-content: center;
 	display:flex;
+	height:250px;
 }
 .bottom_link {
 	text-decoration: none;

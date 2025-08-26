@@ -29,19 +29,22 @@ ol {
 	align-items: center;
 	background-color:#202C3C;
 }
-.schedule_link {
+.schedule_button {
 	position:absolute;
 	bottom:10px;
 	text-align: center;
+	background-color: #202C3C;
+	border: 2px solid #FF6100;
+	border-radius: 10px;
+	color:#F8F8F8;
 }
 .event {
-	width:80%;
+	width:40%;
 	height:80%;
 	position:fixed;
 	top:10%;
-	left:10%;
+	left:30%;
 	background-color:#202C3C;
-	opacity: .8;
 	transition: 1s;
 }
 .event_top{

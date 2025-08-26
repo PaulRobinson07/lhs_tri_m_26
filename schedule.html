@@ -9,10 +9,9 @@
 		<hgroup class="link_section">
 			<a href="schedule.html" class="top_link">Schedule</a>
 			<a class="top_link">Photo Gallery</a>
-			<a class="top_link">Help</a>
-			<img class="logo" src="images/icon_logo.png">
-			<a href="index.html#news" class="top_link">Important News</a>
-			<a class="top_link">Contacts</a>
+			<a href="index.html"><img class="logo" src="images/icon_logo.png"></a>
+			<a href="index.html#music_notes" class="top_link">Important News</a>
+			<a href="index.html#contacts" class="top_link">Contacts</a>
 		</hgroup>
 		<hgroup class="schedule_parent">
 			<h1 class="schedule_month"></h1>
@@ -41,8 +40,6 @@
 			<ol>
 				<li class="schedule_child">
 					<p class="date"></p>
-					<p class="schedule_text">Example Event </p>
-					<button onclick="toggle();" class="schedule_link" >See More</button>
 				<li class="schedule_child">
 					<p class="date"></p>
 				</li>
@@ -114,6 +111,8 @@
 				</li>
 				<li class="schedule_child">
 					<p class="date"></p>
+					<p class="schedule_text">Interest Meeting</p>
+					<button class="schedule_button" >See More</button>
 				</li>
 				<li class="schedule_child">
 					<p class="date"></p>
@@ -123,6 +122,8 @@
 				</li>
 				<li class="schedule_child">
 					<p class="date"></p>
+					<p class="schedule_text">First Meeting</p>
+					<button class="schedule_button" >See More</button>
 				</li>
 				<li class="schedule_child">
 					<p class="date"></p>
@@ -131,10 +132,17 @@
 		</hgroup>
 		<div class="event hidden">
 			<div class="event_top">
-				<h1 class="event_title">Example Event</h1>
-				<p class="event_description">This is wherre the description of the event will go</p>
+				<h1 class="event_title">Interest Meeting 8/27</h1>
+				<p class="event_description">During this meeting freshman, sophmores, and juniors can come to learn about Tri-M. They'll learn what it takes to get in and stay in the honors society. We will review all important events and try to provide parents a reason to have their kids partake in this amazing opportunity.</p>
 			</div>
-			<img onclick="toggle();" src="images/exit.png" class="exit_button">
+			<img src="images/exit.png" class="exit_button">
+		</div>
+		<div class="event hidden">
+			<div class="event_top">
+				<h1 class="event_title">First Meeting</h1>
+				<p class="event_description">During this meeting all currnt members will be required to attend. In addition, all requirements to remain in the honors society will be reviewed. All events during the first semester will be discussed as well as any known opportunities for community service.</p>
+			</div>
+			<img src="images/exit.png" class="exit_button">
 		</div>
 		<script src="code/schedule.js"></script>
 		<script src="code/event.js"></script>
