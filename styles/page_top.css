@@ -9,6 +9,8 @@ body {
 	background-blend-mode: overlay;
 	animation:120s ease-in-out infinite background_move;
 	text-shadow: 1px 5px 5px #202C3C;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 body::before{
 	background:linear-gradient(90deg, blue, orange);
@@ -74,10 +76,11 @@ header {
 	text-align:center;
 	color:#F8F8F8;
 	margin:0;
-	width:800px;
 	position:relative;
 	left: 50%;
 	transform: translateX(-50%);
+	max-width:800px;
+	text-wrap: wrap; 
 }
 .logo {
 	width:300px;

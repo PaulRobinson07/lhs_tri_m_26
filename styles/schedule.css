@@ -16,6 +16,7 @@ ol {
 	list-style-type: none;
 	display:flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .schedule_child {
 	height:200px;
@@ -40,7 +41,8 @@ ol {
 }
 .event {
 	width:40%;
-	height:80%;
+	max-height:70%;
+	min-height:60%;
 	position:fixed;
 	top:10%;
 	left:30%;
@@ -55,6 +57,10 @@ ol {
 }
 .event_title {
 	text-align:center;
+	font-size:45px;
+}
+.event_description {
+	font-size:20px;
 }
 .exit_button {
 	position:absolute;

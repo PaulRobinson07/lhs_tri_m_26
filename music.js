@@ -7,6 +7,7 @@ canvas.width = window.innerWidth;
 canvas.height = 300;
 i=0;
 line_spacing = (canvas.height-5*6)/6
+x_spacing = Math.round((canvas.width-190)/100);
 let note_types = ["whole","half","quarter","eighth"];
 //class in charge of holding all relevant information regarding rendering musical notes
 class note {
@@ -113,8 +114,8 @@ class note {
 }
 notes = [];
 a = canvas.width/11;
-for (i=0;i<10;i++) {
-	n = new note(i*a+a);
+for (i=0;i<x_spacing;i++) {
+	n = new note(i*100+180);
 	notes[i] = n;
 }
 function draw() {
@@ -160,8 +161,12 @@ draw();
 function resize() {
   canvas.width = window.innerWidth;
   canvas.height = 300;
-	console.log(canvas.height);
-	console.log(canvas.width);
+	notes = [];
+	a = canvas.width/11;
+	for (i=0;i<x_spacing;i++) {
+		n = new note(i*100+190);
+		notes[i] = n;
+	}
 }
 // Call resize on load and window resize
 window.addEventListener('resize', resize);
