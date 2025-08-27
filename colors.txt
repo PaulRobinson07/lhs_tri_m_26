@@ -1,4 +1,5 @@
 This is the sheet with all current colors used throughout the website
+No longer up to date, will update later
 	Gray = #202C3C
 	Light Gray = #9292A5
 	Dark Blue = #296AC6
